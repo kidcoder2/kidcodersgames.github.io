@@ -1,0 +1,48 @@
+player.setSize(150,150);
+player.type = "player";
+player.friction = .2;
+player.accel = .6;
+sjs.keyDown(LEFT_KEY, function(){
+player.pushLeft();
+});
+sjs.keyDown(RIGHT_KEY, function(){
+player.pushRight();
+});
+sjs.keyDown(UP_KEY, function(){
+player.pushUp();
+});
+sjs.keyDown(DOWN_KEY, function(){
+player.pushDown();
+});
+var player = new sjs.Image("Images/Coding_Warrior-1.png"); 
+player.setSize(150,150);
+player.type = "player";
+player.friction = .2;
+player.accel = .6;
+sjs.keyDown(LEFT_KEY, function(){
+player.pushLeft();
+});
+sjs.keyDown(RIGHT_KEY, function(){
+player.pushRight();
+});
+sjs.keyDown(UP_KEY, function(){
+player.pushUp();
+});
+sjs.keyDown(DOWN_KEY, function(){
+player.pushDown();
+});
+var r_images = ["Images/Coding_Warrior-1.png","Images/Coding_Warrior-2.png","Images/Coding_Warrior-3.png","Images/Coding_Warrior-4.png"];
+
+var r_facing = true;
+var r_track = 0;
+var l_track = 0;
+
+sjs.keyDown(SPACE_KEY, function(){
+r_facing = true;
+r_track = r_track + 1;
+player.pushRight(2);
+player.setImage([r_track]);
+if (r_track == 7){
+	r_track = 0;
+};
+}

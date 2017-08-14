@@ -1,0 +1,21 @@
+ setInterval(function(){
+ 	if (condition) {
+    block of code to be executed if the condition is true
+} else {
+    block of code to be executed if the condition is false
+}
+ 	var enemyloc_h = Math.floor(1 + Math.random()*100);
+enemy.moveTo(2500,enemyloc_h);
+var enemy = new sjs.Image("Images/SpiFang-1.png");
+enemy.setSize(150,150);
+enemy.type = "enemy";
+enemy.setGravity(3);
+setInterval(function(){
+enemy.setImage("Images/Ducky Viper-2.png");
+enemy.pushLeft(0.5);
+},200);
+setInterval(function(){
+enemy.setImage("Images/SpiFang-1.png");
+enemy.pushLeft(2);
+},250);
+}, 1500);

@@ -1,0 +1,10 @@
+sjs.keyDown(SPACE_KEY, function(){
+setTimeout(player.setImage("Images/Coding_Warrior-2.png"),100);
+setTimeout(player.setImage("Images/Coding_Warrior-3.png"),100);
+setTimeout(player.setImage("Images/Coding_Warrior-4.png"),100);
+setTimeout(player.setImage("Images/Coding_Warrior-1.png"),100);
+});
+
+	setTimeout(player.setImage("Images/Coding_Warrior-2.png")),00);
+    setTimeout(player.setImage("Images/Coding_Warrior-3.png")),300);
+    setTimeout(player.setImage("Images/Coding_Warrior-1.png")),300);

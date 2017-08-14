@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding Warrior's Adventure</title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var seth = new sjs.Image("Images/sethiorg.png")
+seth.setSize(300,300);
+seth.moveTo(0,400);
+var speech = new sjs.Image("Images/wigflip-ds-1.gif")
+speech.moveTo(115,115);
+var start_button = new sjs.Button("Start", function(){
+window.location = "codingwarrior.html";
+start_button.moveTo(0,400);
+});
+}//end start function
+</script>
+</head>
+<body onload="start()">
+<h1>Coding Warrior's Adventure</h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>

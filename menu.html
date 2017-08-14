@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding Warrior's Adventure</title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+	var background = new sjs.Image("Images/cwa-1.png");
+background.setSize(400,400);
+background.center();
+var menu_text = new sjs.Text("Coding Warrior's Adventure",40,"cyan");
+menu_text.centerH();
+var start_button = new sjs.Button("Start", function(){
+window.location = "intro.html";
+});
+start_button.center();
+var Instructions_button = new sjs.Button("Instructions", function(){
+window.location = "instructions.html";
+});
+Instructions_button.moveTo(200,220);
+}//end start function
+</script>
+</head>
+<body onload="start()">
+<h1>Coding Warrior's Adventure</h1>
+
+<div id="target" style="margin:auto;background:aquamarine4;"></div>
+</body>
+</html>

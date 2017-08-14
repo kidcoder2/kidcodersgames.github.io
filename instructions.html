@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding Warrior's Adventure</title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var instructions_text = new sjs.Text("Press your arrow keys to move. Dodge the monsters and try to get to the portal. Press the space bar for music!",48,"cyan");
+var menu_button = new sjs.Button("Menu", function(){
+window.location = "menu.html";
+});
+menu_button.center().bottom();
+}//end start function
+</script>
+</head>
+<body onload="start()">
+<h1>Coding Warrior's Adventure</h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
